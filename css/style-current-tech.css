@@ -1,0 +1,155 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size: 20px;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: medium;
+	line-height: 1.25;
+	background: url("../images/background.jpeg") #f1f1f1;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.active {
+	background: white;
+    
+	font-weight: bold;
+	text-align: center;
+	transform: rotate(-0.02turn);
+	box-shadow: 5px 5px 10px 2px rgba(221, 193, 99, 0.596);
+
+}
+
+.active a{
+	text-decoration: none;
+ }
+
+/* visited link */
+a:visited {
+	color: #0000FF;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: brown;
+  }
+  
+  /* selected link */
+  a:active {
+	color: #0000FF;
+  }
+
+/*Style the images*/
+img{
+    height: 150px;
+	width: 250px;
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+	margin: 10px;
+	object-fit: contain;
+
+}
+
+img:hover{
+	transform: scale(1.1);
+    transform: rotate(-0.1turn);
+    border: 3px solid yellowgreen;
+}
+
+
+img:nth-child(2n):hover{
+	transform: scale(1.1);
+    transform: rotate(0.1turn);
+    border: 3px solid yellowgreen;
+}
+
+
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 20px;
+}
+
+/*Add borders around the main components and some
+space too*/
+header, main, nav, h1, footer{
+	border: 0px solid grey;
+	margin: 10px 0;
+}
+
+
+ #gallery {
+	display: grid;
+	/* grid-template-columns: repeat(3, 40);
+	grid-template-rows: repeat(3, 30%); */
+	align-items: center;
+  	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	
+	margin-top: 44px;
+	/* justify-items: stretch; */
+	justify-content: center;
+	/* align-items: stretch; */
+	align-content: center;
+	/* grid-auto-flow: column;
+	width:auto; */
+	/* gap: 10px; */
+} 
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	background-color: #cdbbee;
+	padding:10px;
+	border:1px solid rgb(185, 172, 112);
+	display: inline-block;
+	width: 22%;
+	border-radius: 30px;
+	text-align:center;
+	overflow-wrap:break-word;
+}
+
+
+/*Added this so the links stay the same color*/
+/* a:visited{color:#0000FF} */
+
+a.skip-link {
+	background-color: #8b4dff;
+	border:1px solid rgb(185, 172, 112);
+	padding:10px;
+	color: white;
+
+	font-weight: 700;
+
+	display: inline-block;
+    /* left: auto;
+    right: auto;
+	position: relative; */
+	font-size: 20px;
+
+	position: absolute;
+    top: -50px;
+	
+	/* transform: translateY(-100%);
+	transition: transform 0.3s; */
+  }
+  
+  .skip-link:focus {
+	/* transform: translateY(0%); */
+	top:20px;
+  }
+
+  

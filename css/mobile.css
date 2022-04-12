@@ -1,0 +1,40 @@
+/* mobile view */
+/* @media screen and (max-width: 900px){
+    
+     
+} */
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+nav li {
+    /* align-content:center;  */
+    flex-basis: auto;
+    /* overflow-wrap: break-word; */
+	font-size: 3.1vw;
+	
+}
+  
+
+
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 30%);
+	
+	margin-top: 44px;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	/* grid-auto-flow: column; */
+	width:auto;
+	/* gap: 10px; */
+    box-sizing: border-box;
+} 
+
+
+
