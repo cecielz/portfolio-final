@@ -5,6 +5,7 @@ body{
 	padding:1%;
 	font-size:150%;
 	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	/* font-weight: medium; */
 	line-height: 1.25;
 	background: url("../images/background.jpeg") #f1f1f1;
 }
@@ -14,7 +15,23 @@ h1{
 	font-size: 2em; 
 	font-weight: bold;
 	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
 
+
+h2{
+	font-size: 1.5em; 
+	/* font-size: 2em; on current tech */
+}
+
+/*spacing for paragraphs, headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+
+/* borders around the main components*/
+header, main, nav, h1, footer{
+	border: 0px solid grey;
+	margin: 10px 0;
 }
 
 .active {
@@ -49,65 +66,21 @@ a:visited {
 /*Style the images*/
 img{
     height: 200px;
-	width: 200px;
-	/*width: 200px;
-	*/
+	width: 200px; 
+
     border: 3px solid blue;
     padding: 25px;
     border-radius: 10px;
 	margin: 10px;
 	object-fit: cover;
-
 }
-
+/* general scaling */
 img:hover{
 	transform: scale(1.1);
 }
 
 
-
-/*Make the h2 heading match h1*/
-h2{
-	font-size: 1.5em; 
-}
-
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
-}
-
-/*Add borders around the main components and some
-space too*/
-header, main, nav, h1, footer{
-	border: 0px solid grey;
-	margin: 10px 0;
-}
-
-
-/* #gallery-main {
-	display: flex;
-	justify-content: space-evenly;
-  	align-items: center;
-	position: relative;
-	flex-wrap: wrap;
-	
-  }
-
-  #gallery-main img{
-	flex-basis:200px;
-	position: relative;
-	flex: 1 1;
-	width: 20%;
-	z-index: 12;
-	cursor: pointer;
-	overflow: hidden;
-	transition:  0.5s ease-in;
-  }
-  #gallery-main img:hover {
-	opacity: 1;
-	width: 100%;
-	}  */
-
+ /* gallery on index page flex */
 #gallery-main {
 	display: flex; 
     flex-direction: row;
@@ -126,6 +99,44 @@ header, main, nav, h1, footer{
 }
 
 
+/* gallery using grid 
+==================================
+*/
+
+/*Style the gallery on current-tech*/
+#gallery img{
+    height: 150px;
+	width: 250px;
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+	margin: 10px;
+	object-fit: contain;
+}
+
+#gallery img:hover{
+	transform: scale(1.1);
+    transform: rotate(-0.1turn);
+    border: 3px solid yellowgreen;
+}
+
+
+#gallery img:nth-child(2n):hover{
+	transform: scale(1.1);
+    transform: rotate(0.1turn);
+    border: 3px solid yellowgreen;
+}
+
+ #gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+  	/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+	margin-top: 44px;
+	justify-items: center; 
+}  
+
+ 
 
 /*Change the styling for all of the list 
 items in the nav section*/
@@ -134,14 +145,22 @@ nav li{
 	padding:10px;
 	border:1px solid rgb(185, 172, 112);
 	display: inline-block;
-	width: 22%;
+	/* width: 22%; */
 	border-radius: 30px;
 	text-align:center;
 	box-sizing: border-box;
-
+	width: 25%;
+	/* overflow-wrap:break-word; */
+	flex-basis: auto;
+	font-size: 2.6vw;
 }
 
-
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	flex-wrap: wrap;
+}
 
 /*Added this so the links stay the same color*/
 /* a:visited{color:#0000FF} */
@@ -167,6 +186,10 @@ a.skip-link {
 	top:20px;
   }
 
+/* form 
+=============================================
+*/
+
 form h1, h2{
 	font-weight: normal;
 	padding: 0px 10px;
@@ -180,7 +203,9 @@ form h1, h2{
 
 
 
-
+/* bulb 
+====================================================
+*/
 .frame {
 	/* position: inline; */
 	/* top: 50%;
@@ -226,7 +251,6 @@ form h1, h2{
 
 #base {
 	position: absolute;
- 	
 	top: 233px;
 	/* right: 184px; */
 	right: 162px;
