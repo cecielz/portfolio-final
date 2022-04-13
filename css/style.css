@@ -7,7 +7,7 @@ body{
 	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 	/* font-weight: medium; */
 	line-height: 1.25;
-	background: url("../images/background.jpeg") #f1f1f1;
+	background: url("../images/background.jpeg") #110202;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -233,7 +233,8 @@ nav li {
     flex-basis: auto;
     /* overflow-wrap: break-word; */
 	font-size: 5vw;
-	background-color: #a777ff;
+	/* background-color: #a777ff; */
+	background-color: #bbdadc;
 	padding:10px;
 	border:1px solid rgb(185, 172, 112);
 	display: inline-block;
@@ -510,14 +511,8 @@ form section{
 	}
 
 	nav li{
-		background-color: #a777ff;
-		padding:10px;
-		border:1px solid rgb(185, 172, 112);
-		display: inline-block;
-		width: 22%;
-		border-radius: 30px;
-		text-align:center;
-		box-sizing: border-box;
+		
+		width: 22%; 
 		/* overflow-wrap:break-word; */
 		flex-basis: auto;
 		font-size: 2.6vw;
@@ -602,25 +597,13 @@ form section{
 ====================================*/
 @media screen and (min-width: 1000px){
 	.nav_links{
-		
 		justify-content: center
 	}
 
 	nav li{
-		background-color: #a777ff;
-		padding:10px;
-		border:1px solid rgb(185, 172, 112);
-		display: inline-block;
-		width: 20%;
-		border-radius: 30px;
-		text-align:center;
-		box-sizing: border-box;
-		/* overflow-wrap:break-word; */
-		flex-basis: auto;
+		width: 20%; 
 		font-size: 1.5vw;
 	}
-
-	
 }
 
 @media screen and (prefers-reduced-motion: reduce){
@@ -632,4 +615,27 @@ form section{
 		background:none;
 		background-attachment: initial;
 	}
+
+	
+
+
+	.flip-card:hover .flip-card-inner {
+		transform: none;
+	}
+	
+	.flip-card:focus .flip-card-inner{
+		transform: none;
+	}
+	.flip-card-back { 
+		transform: none;
+	}
+
+	.flip-card-inner{
+		transition:none;
+	}
+
+	.flip-card-back {
+		position: relative; 
+	}
+
 }
