@@ -78,89 +78,42 @@
 			the form!
 		-->
 
-		<form action="https://formspree.io/f/xzbovebg" method="POST">
-			<h1>What do you think?</h1>
-			<h2>Leave a comment below to let us know!</h2>
+		<div id="form-container">
+			<h1>&bull; What do you think? &bull;</h1>
+		   </div>
+			<form action="#https://formspree.io/f/xzbovebg" method="post" id="contact_form">
+			  <div class="name">
+				<label for="name"></label>
+				<input type="text" placeholder="*My name" name="name" id="name_input" required>
+			  </div>
+			  <div class="email">
+				<label for="email"></label>
+				<input type="email" placeholder="*My e-mail" name="email" id="email_input" required>
+			  </div>
+			  <div class="telephone">
+				<label for="name"></label>
+				<input type="text" placeholder="*My number" name="telephone" id="telephone_input" required>
+			  </div>
+			  <div class="subject">
+				<label for="subject"></label>
+				<select placeholder="Subject line" name="subject" id="subject_input" required>
+				  <option disabled hidden selected>*Subject line</option>
+				  <option>Start a discussion</option>
+				  <option>Ask a question</option>
+				  <option>Make a suggestion</option>
+				</select>
+			  </div>
+			  <div class="message">
+				<label for="message"></label>
+				<textarea name="message" placeholder="*I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+			  </div>
+			  <div class="submit">
+				<input type="submit" value="Send Message" id="form_button" />
+			  </div>
+			</form><!-- // End form -->
+		  </div><!-- // End #container -->
 
-			<section class="respond-name">
-				<label for="name">How would you like to be called?</label>
-				<input type="text" name="name" id="name">
-			</section>
-			<hr>
-		
-			<section class="excited">
-				<label for="excitement">On a scale of 1 to 5, with 1 being the lowest, how would you like to rate your excitement for virtual senses? </label>
-				<br>
-				<span>1</span>
-				<input type="range" name="excitement" id="excitement" value="3" min="1" max="5">
-				<span>5</span>
-			</section>
 
-			<hr>
-		
-			<section class="best">
-				<span>Which senses are exciting for you in a virtual context?</span>
-				<br>
-				<input type="checkbox" name="exciting" id="taste" value="taste">
-				<label for="taste">Taste</label>
-				<input type="checkbox" name="exciting" id="smell" value="smell">
-				<label for="smell">Smell</label>
-				<input type="checkbox" name="exciting" id="touch" value="touch">
-				<label for="touch">Touch</label>
-				<input type="checkbox" name="exciting" id="sight" value="sight">
-				<label for="sight">Eyesight</label>
-				<input type="checkbox" name="exciting" id="sound" value="sound">
-				<label for="sound">Sound</label>
-			</section>
-			<hr>
-		
-			<section class="contact">
-				<span>Would you like to stay updated with us?</span>
-				<br>
-				<input type="radio" name="contact" id="yes" value="yes">
-				<label for="yes">Yes</label>
-				<input type="radio" name="contact" id="no" value="yes">
-				<label for="no">No</label>
-			</section>
-			<hr>
-		
-			<section class="contact-type">
-				<label for="contact">How would you like to be updated for future discussions?</label>
-				<select name="contact" id="contact">
-					<option value="phone">Phone</option>
-					<option value="email">Email</option>
-\				</select>
-			</section>
-			<hr>
-		
-			<!-- <section class="sauce-selection">
-				<label for="sauce">What type of sauce would you like?</label>
-				<input list="sauces" id="sauce" name="sauce">
-				<datalist id="sauces">
-					<option value="ketchup"></option>
-					<option value="mayo"></option>
-					<option value="mustard"></option>
-				</datalist>
-			</section> 
-			<hr> -->
-
-			<section class="years-old">
-				<label for="age">What is your age in number?</label>
-				<input type="number" name="age" id="age">
-			</section>
-			<hr>
-
-			<section class="extra-info">
-				<label for="extra">Please leave your contact, and anything else you'd like to add?</label>
-				<br>
-				<textarea id="extra" name="extra" rows="4" cols="40"></textarea>
-			</section>
-			<hr>
-		
-			<section class="submission">
-				<input type="submit" value="Submit">
-			</section>
-		</form>
 
 
 		
