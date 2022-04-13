@@ -17,7 +17,6 @@
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" media="(max-width: 900px)" href="css/mobile.css" /> 
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/4a5c9294d8.js" crossorigin="anonymous"></script>
@@ -62,7 +61,7 @@
 		
 
 		<div class="frame">
-			<svg width="76px" height="94px" viewBox="0 0 76 94" id="bulb" onclick="myFunction()">
+			<svg width="76px" height="94px" viewBox="0 0 76 94" id="bulb" onclick="lightBulb()">
 				<path d="M76,37.037 C76,59.939 55.6428571,75.427 55.6428571,93.5 L20.3571429,93.5 C20.3571429,75.427 0,59.9335 0,37.037 C0,13.1505 18.9891429,0 37.9782857,0 C56.9891429,0 76,13.167 76,37.037 L76,37.037 Z"></path>
 			</svg>
 			<div id="glow"></div>
@@ -172,15 +171,24 @@
 	</footer>
 
 	<script>
-		function myFunction() {
+		let white = false;
+
+		function lightBulb() {
 			var x = document.querySelector("body");
-			if (x.style.background === 'url("../images/background.jpeg")') {
+
+			// if (x.style.background === 'url("../images/background.jpeg")') {
+			if (white == false) {
 				x.style.background = 'white';
+				white = true;
 			} 
-			else {
+
+			else if (white == true){
 				var imageurl = "url('" + window.location.href + "../images/background.jpeg')";
+				imageurl = "url('images/background.jpeg')";
 				x.style.background = imageurl;
-			}
+				white = false;
+				console.log("changing to original")
+ 			}
 		}
 	</script> 
 </body>
