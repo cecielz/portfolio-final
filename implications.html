@@ -85,27 +85,27 @@
 	 	
 
 		<div id="form-questions">
-			<form
-			  action="https://formspree.io/f/xjvlaoow"
-			  method="POST"
-			  >
-			  <label>
-				  
-				  <input type="email" name="email" placeholder="Your email">
+			<form action="https://formspree.io/f/xjvlaoow"
+			  method="POST">
+			  <label for="email">
+				  Your email:
+				  <input type="email" name="email" id="email" placeholder="name@domain.com">
 			  </label>
 
 			  <label for="subject">
 				  <!-- Your subject: -->
-			  </label>
-			  <select placeholder="Subject line" name="subject" id="subject_input">
+				  Your subject:
+			  </label> 
+			  <select placeholder="Select from dropdown" name="subject" id="subject_input">
 				  <option disabled hidden selected>Subject line</option>
 				  <option>Start a discussion</option>
 				  <option>Ask a question</option>
 				  <option>Make a suggestion</option>
 			  </select>
 
-			  <label>
-				  <textarea name="message" placeholder="Your message"></textarea>
+			  <label for="message">
+				  Your message:
+				  <textarea id="message" name="message" placeholder="Things to say"></textarea>
 			  </label>
 			  <!-- your other form fields go here -->
 			  <button type="submit" id="form_button">Send Message</button>
