@@ -7,7 +7,7 @@ body{
 	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 	/* font-weight: medium; */
 	line-height: 1.25;
-	background: url("../images/background.jpeg") #110202;
+	background: url("../images/background.jpeg") rgba(255, 255, 255, 0);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
