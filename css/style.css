@@ -98,7 +98,7 @@ img:hover{
 }
 
 #gallery-main img{
-    border: solid 5px rgba(0, 0, 255, 0.363);
+    border: 2px dotted rgba(0, 0, 255, 0.363);
     margin: 8px;
     width: 300px;
 	padding: 5px;
@@ -242,7 +242,7 @@ nav li {
 	border-radius: 30px;
 	text-align:center;
 	box-sizing: border-box;
-	width: 50%;
+	width: 40%;
 	margin: 5px;
 	
 }
@@ -506,7 +506,7 @@ form section{
 
 
 /* tablet view */
-@media screen and (min-width: 720px){
+@media screen and (min-width: 800px){
 	.nav_links{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -521,12 +521,8 @@ form section{
 	}
 
 	#gallery {
-		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		align-items: center;
-		margin-top: 44px;
 		margin-bottom: 30px;
-		justify-items: center; 
 	} 
 
 	#gallery img{
@@ -534,7 +530,7 @@ form section{
 		width: 200px;
 		/* height: auto;
 		width: 50%; */
-		border: 3px solid blue;
+		border: 2px dotted rgba(0, 0, 255, 0.363);
 		padding: 5px;
 		border-radius: 10px;
 		margin: 10px;
@@ -597,7 +593,7 @@ form section{
 
 /* desktop view 
 ====================================*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1060px){
 	.nav_links{
 		justify-content: center
 	}
